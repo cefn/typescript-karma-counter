@@ -2,14 +2,14 @@
 
 This repo is a reference configuration for source-mapped Typescript code.
 
-# Install the project
+## Install the project
 
 ```
 npm install -g pnpm 
 pnpm install
 ```
 
-# Run the example application
+## Run the example application
 
 ```
 pnpm run start
@@ -17,21 +17,24 @@ pnpm run start
 
 After launching the application should be available at http://localhost:8080
 
-# Run the tests
+You can use the 'Debug App' target in the VSCode [launch.json](.vscode/launch.json) to interactively debug [app.tsx](./src/app.tsx) from within an IDE with Typescript sourcemapping.
+
+## Run the tests
 
 
 ```
 pnpm run test
 ```
 
-# Debug the tests
+## Debug the tests
 
 ```
 pnpm karma start --browsers Chrome
 ```
 
-After launching, you should be able to use the Test target in the VSCode [launch.json](.vscode/launch.json) to interactively debug [app.test.tsx](./test/app.test.tsx)
+After launching the test suite can be run at http://localhost:9876/debug.html
 
+You can use the 'Debug Tests' target in the VSCode [launch.json](.vscode/launch.json) to interactively debug e.g. [app.test.tsx](./test/app.test.tsx) from within an IDE with Typescript sourcemapping.
 
 # About the App
 
