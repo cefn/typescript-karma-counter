@@ -1,0 +1,26 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Debug App",
+      "sourceMaps": true,
+      "webRoot": "${workspaceRoot}",
+      "url": "http://localhost:8080/"
+      //   "runtimeArgs": ["--headless"]
+    },
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Debug Tests",
+      "sourceMaps": true,
+      "webRoot": "${workspaceRoot}",
+      "url": "http://localhost:9876/debug.html"
+      //   "runtimeArgs": ["--headless"]
+    }
+  ]
+}
