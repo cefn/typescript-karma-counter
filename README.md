@@ -2,7 +2,7 @@
 
 This repo is a reference configuration for debugging and testing Typescript React code. It uses Karma, Jasmine, React-Testing-Library.
 
-It uses Webpack Server to launch an app or Karma to launch a test suite within any supported browser. In both cases, sourcemaps enable line-by-line debugging from within the browser or using VSCode.
+It uses Webpack Server to launch an app or Karma to launch a test suite within any supported browser. In both cases, sourcemaps enable line-by-line debugging of Typescript source from within the browser or using VSCode.
 
 ## Install the project
 
