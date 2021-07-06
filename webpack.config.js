@@ -1,3 +1,6 @@
+// Bypass strictness for webpack config which is commonjs
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-var-requires */
 const webpack = require("webpack");
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
@@ -7,7 +10,7 @@ module.exports = {
   entry: "./src/index.tsx",
   output: {
     path: path.resolve(__dirname, "build"),
-    filename: "[name].bundle.js",
+    filename: "[name].js",
   },
   devtool: "eval-source-map",
   mode: "development",

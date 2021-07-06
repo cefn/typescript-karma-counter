@@ -36,7 +36,7 @@ describe("App component behaviour", () => {
     await findByText("4");
     return;
   });
-  //   await new Promise(() => {})
+  //   await new Promise(() => { return undefined})
   //   return;
   // }, 1000000);
 });

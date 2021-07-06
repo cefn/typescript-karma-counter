@@ -1,5 +1,6 @@
-// Karma configuration
-// Generated on Thu Mar 08 2018 08:55:11 GMT-0800 (PST)
+// Bypass strictness for karma config which is commonjs
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-var-requires */
 var webpackConfig = require("./webpack.config.js");
 
 module.exports = function (config) {
@@ -18,7 +19,7 @@ module.exports = function (config) {
     client: {
       jasmine: {
         random: false,
-      }
+      },
     },
     files: ["test/**/*.test.ts", "test/**/*.test.tsx"],
     preprocessors: {
